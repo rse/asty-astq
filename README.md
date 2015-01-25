@@ -5,10 +5,10 @@ ASTy-ASTq
 Abstract Syntax Tree With Integrated Query Engine
 
 <p/>
-<img src="https://nodei.co/npm/asty.png?downloads=true&stars=true" alt=""/>
+<img src="https://nodei.co/npm/asty-astq.png?downloads=true&stars=true" alt=""/>
 
 <p/>
-<img src="https://david-dm.org/rse/asty.png" alt=""/>
+<img src="https://david-dm.org/rse/asty-astq.png" alt=""/>
 
 Installation
 ------------
