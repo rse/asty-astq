@@ -1,0 +1,39 @@
+{
+    "name":        "asty-astq",
+    "version":     "1.0.0",
+    "description": "Abstract Syntax Tree With Integrated Query Engine",
+    "keywords":    [ "ast", "abstract", "syntax", "tree", "query", "engine", "integration", "asty", "astq" ],
+    "main":        "lib/asty-astq.node.js",
+    "repository": {
+        "type": "git",
+        "url":  "https://github.com/rse/asty-astq.git"
+    },
+    "author": {
+        "name":  "Ralf S. Engelschall",
+        "email": "rse@engelschall.com",
+        "url":   "http://engelschall.com"
+    },
+    "licenses": [{
+        "type": "MIT",
+        "url":  "http://opensource.org/licenses/MIT"
+    }],
+    "homepage": "https://github.com/rse/asty-astq",
+    "bugs":     "https://github.com/rse/asty-astq/issues",
+    "devDependencies": {
+        "grunt":                "~0.4.5",
+        "grunt-cli":            "~0.1.13",
+        "grunt-contrib-jshint": "~0.11.0",
+        "grunt-contrib-clean":  "~0.6.0",
+        "grunt-browserify":     "~3.3.0",
+        "grunt-mocha-test":     "~0.12.7",
+        "chai":                 "~1.10.0",
+        "6to5ify":              "~3.1.2",
+        "minifyify":            "~6.1.0",
+        "browserify-header":    "~0.9.1",
+        "browserify-derequire": "~0.9.1"
+    },
+    "dependencies": {
+        "asty":                 "~1.0.0",
+        "astq":                 "~1.0.0"
+    }
+}
