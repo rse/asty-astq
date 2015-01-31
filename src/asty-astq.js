@@ -23,8 +23,8 @@
 */
 
 /*  require both ASTy and ASTq  */
-var ASTY = require("asty")
-var ASTQ = require("astq")
+let ASTY = require("asty")
+let ASTQ = require("astq")
 
 /*  define an ASTq adapter for ASTy  */
 let ASTQAdapter = class ASTQAdapter {
