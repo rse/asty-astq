@@ -50,8 +50,6 @@ module.exports = function (grunt) {
                         [ "browserify-header" ]
                     ],
                     external: [
-                        "asty",
-                        "astq"
                     ],
                     browserifyOptions: {
                         standalone: "ASTYASTQ",
