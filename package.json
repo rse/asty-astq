@@ -1,6 +1,6 @@
 {
     "name":        "asty-astq",
-    "version":     "1.0.1",
+    "version":     "1.0.2",
     "description": "Abstract Syntax Tree With Integrated Query Engine",
     "keywords":    [ "ast", "abstract", "syntax", "tree", "query", "engine", "integration", "asty", "astq" ],
     "main":        "lib/asty-astq.node.js",
@@ -34,6 +34,6 @@
     },
     "dependencies": {
         "asty":                 "~1.0.2",
-        "astq":                 "~1.0.1"
+        "astq":                 "~1.1.0"
     }
 }
