@@ -35,7 +35,7 @@ module.exports = function (grunt) {
                 jshintrc: "jshint.json"
             },
             "gruntfile":  [ "Gruntfile.js" ],
-            "asty-astq": [ "src/**/*.js" ]
+            "asty-astq": [ "src/**/*.js", "tst/**/*.js" ]
         },
         browserify: {
             "asty-astq-browser": {
@@ -83,8 +83,7 @@ module.exports = function (grunt) {
                 src: [ "tst/*.js", "!tst/common.js" ]
             },
             options: {
-                reporter: "spec",
-                require: "tst/common.js"
+                reporter: "spec"
             }
         },
         clean: {
@@ -93,7 +92,7 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.registerTask("default", [ "jshint", "browserify" ]);
+    grunt.registerTask("default", [ "jshint", "browserify", "mochaTest" ]);
     grunt.registerTask("test", [ "mochaTest" ]);
 };
 

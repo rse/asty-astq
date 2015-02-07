@@ -22,10 +22,17 @@
 **  SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
+/* global describe: false */
+/* global it: false */
+
+var chai = require("chai")
+var expect = chai.expect
+chai.config.includeStack = true
+
 describe("ASTy-ASTq Library", function () {
     it("basic functionality", function () {
-        var ASTYASTQ = require("../lib/asty-astq.node.js");
-        var asty = new ASTYASTQ;
+        var ASTYASTQ = require("../lib/asty-astq.node.js")
+        var asty = new ASTYASTQ()
         var node = asty.create("foo")
         expect(node).to.be.a("object")
         expect(node).to.include.keys("T", "A", "C", "P")
