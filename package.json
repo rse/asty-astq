@@ -1,6 +1,6 @@
 {
     "name":        "asty-astq",
-    "version":     "1.0.4",
+    "version":     "1.0.5",
     "description": "Abstract Syntax Tree With Integrated Query Engine",
     "keywords":    [ "ast", "abstract", "syntax", "tree", "query", "engine", "integration", "asty", "astq" ],
     "main":        "lib/asty-astq.node.js",
@@ -26,14 +26,14 @@
         "grunt-contrib-clean":  "~0.6.0",
         "grunt-browserify":     "~3.3.0",
         "grunt-mocha-test":     "~0.12.7",
-        "chai":                 "~1.10.0",
+        "chai":                 "~2.0.0",
         "6to5ify":              "~4.1.0",
         "minifyify":            "~6.1.0",
         "browserify-header":    "~0.9.1",
         "browserify-derequire": "~0.9.1"
     },
     "dependencies": {
-        "asty":                 "~1.0.3",
-        "astq":                 "~1.2.1"
+        "asty":                 "~1.0.4",
+        "astq":                 "~1.2.3"
     }
 }
