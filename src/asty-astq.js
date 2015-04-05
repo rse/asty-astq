@@ -39,6 +39,8 @@ let ASTQAdapter = class ASTQAdapter {
 /*  define an ASTy super class hooking up ASTq to ASTy  */
 let ASTYASTQ = class ASTYASTQ extends ASTY {
     constructor () {
+        super()
+
         /*  allow us to be called without "new"  */
         if (!(this instanceof ASTYASTQ))
             return new ASTYASTQ()
