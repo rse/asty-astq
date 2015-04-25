@@ -34,7 +34,7 @@
         "browserify-derequire": "~0.9.4"
     },
     "dependencies": {
-        "asty":                 "~1.1.2",
-        "astq":                 "~1.4.2"
+        "asty":                 "~1.1.3",
+        "astq":                 "~1.4.3"
     }
 }
