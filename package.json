@@ -3,6 +3,7 @@
     "version":     "1.2.3",
     "description": "Abstract Syntax Tree With Integrated Query Engine",
     "keywords":    [ "ast", "abstract", "syntax", "tree", "query", "engine", "integration", "asty", "astq" ],
+    "license":     "MIT",
     "main":        "lib/asty-astq.node.js",
     "repository": {
         "type": "git",
@@ -13,10 +14,6 @@
         "email": "rse@engelschall.com",
         "url":   "http://engelschall.com"
     },
-    "licenses": [{
-        "type": "MIT",
-        "url":  "http://opensource.org/licenses/MIT"
-    }],
     "homepage": "https://github.com/rse/asty-astq",
     "bugs":     "https://github.com/rse/asty-astq/issues",
     "devDependencies": {
@@ -34,7 +31,7 @@
         "browserify-derequire": "~0.9.4"
     },
     "dependencies": {
-        "asty":                 "~1.1.5",
-        "astq":                 "~1.4.5"
+        "asty":                 "~1.2.0",
+        "astq":                 "~1.4.7"
     }
 }
