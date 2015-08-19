@@ -1,6 +1,6 @@
 {
     "name":        "asty-astq",
-    "version":     "1.3.4",
+    "version":     "1.3.5",
     "description": "ASTy integration to ASTq",
     "main":        "lib/asty-astq.browser.js",
     "homepage":    "https://github.com/rse/asty-astq",
@@ -10,8 +10,8 @@
     ],
     "keywords": [ "ast", "abstract", "syntax", "tree" ],
     "dependencies": {
-        "asty":    "~1.3.2",
-        "astq":    "~1.5.3"
+        "asty":    "~1.3.3",
+        "astq":    "~1.5.4"
     },
     "ignore": [
         "**/.*",
