@@ -1,6 +1,6 @@
 {
     "name":        "asty-astq",
-    "version":     "1.4.0",
+    "version":     "1.4.1",
     "description": "Abstract Syntax Tree With Integrated Query Engine",
     "keywords":    [ "ast", "abstract", "syntax", "tree", "query", "engine", "integration", "asty", "astq" ],
     "license":     "MIT",
@@ -33,6 +33,6 @@
     },
     "dependencies": {
         "asty":                 "~1.4.0",
-        "astq":                 "~1.6.0"
+        "astq":                 "~1.6.1"
     }
 }
