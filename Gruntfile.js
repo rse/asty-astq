@@ -43,7 +43,7 @@ module.exports = function (grunt) {
                     "lib/asty-astq.browser.js": [ "src/**/*.js" ]
                 },
                 options: {
-                    transform: [ "babelify" ],
+                    transform: [ [ "babelify", { presets: [ "es2015" ] } ] ],
                     plugin: [
                         [ "minifyify", { map: "asty-astq.browser.map", output: "lib/asty-astq.browser.map" } ],
                         [ "browserify-derequire" ],
@@ -62,7 +62,7 @@ module.exports = function (grunt) {
                     "lib/asty-astq.node.js": [ "src/**/*.js" ]
                 },
                 options: {
-                    transform: [ "babelify" ],
+                    transform: [ [ "babelify", { presets: [ "es2015" ] } ] ],
                     plugin: [
                         [ "browserify-derequire" ],
                         [ "browserify-header" ]
