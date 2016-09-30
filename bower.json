@@ -10,8 +10,8 @@
     ],
     "keywords": [ "ast", "abstract", "syntax", "tree" ],
     "dependencies": {
-        "asty":    "~1.4.5",
-        "astq":    "~1.7.0"
+        "asty":    "~1.4.7",
+        "astq":    "~1.8.0"
     },
     "ignore": [
         "**/.*",
