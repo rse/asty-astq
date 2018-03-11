@@ -30,7 +30,7 @@ About
 
 ASTy-ASTq, as its name implies, is a combination of
 the Abstract Syntax Tree (AST) Data Structure library
-[ASTy](https://www.npmjs.com/package/asty) and the Anstract Syntax Tree
+[ASTy](https://www.npmjs.com/package/asty) and the Abstract Syntax Tree
 (AST) Query Engine Library [ASTq](https://www.npmjs.com/package/astq).
 Technically ASTy-ASTq is a super-class of ASTy while it internally
 integrates ASTq so that each ASTy node has an additional `query` method
