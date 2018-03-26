@@ -33,7 +33,7 @@
         "browserify-derequire": "0.9.4"
     },
     "dependencies": {
-        "asty":                 "1.6.2",
-        "astq":                 "2.1.1"
+        "asty":                 "1.6.3",
+        "astq":                 "2.1.2"
     }
 }
