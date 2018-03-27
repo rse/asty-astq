@@ -33,15 +33,24 @@ the Abstract Syntax Tree (AST) Data Structure library
 [ASTy](https://www.npmjs.com/package/asty) and the Abstract Syntax Tree
 (AST) Query Engine Library [ASTq](https://www.npmjs.com/package/astq).
 Technically ASTy-ASTq is a super-class of ASTy while it internally
-integrates ASTq so that each ASTy node has an additional `query` method
-available. The `query` method has the folowing signature (in TypeScript
-notation):
+integrates ASTq so that each ASTy node has additional `compile`,
+`execute` and `query` methods available. The methods have the folowing
+signatures (in TypeScript notation):
 
+    compile(
+        selector: String,
+        trace?: Boolean
+    ): ASTYQuery
+    execute(
+        query: ASTQQuery,
+        params?: { [name: String]: [value: Any] },
+        trace?: Boolean
+    ): ASTYNode[]
     query(
         selector: String,
         params?: { [name: String]: [value: Any] },
         trace?: Boolean
-    ): ASTYNode
+    ): ASTYNode[]
 
 In other words, the following ASTy-ASTq usage...
 

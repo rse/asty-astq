@@ -52,8 +52,14 @@ let ASTYASTQ = class ASTYASTQ extends ASTY {
         let astq = new ASTQ()
         astq.adapter(new ASTQAdapter())
 
-        /*  extend this ASTy instance with an ASTq query method  */
+        /*  extend this ASTy instance with ASTq methods  */
         this.extend({
+            compile (selector, trace) {
+                return astq.compile(selector, trace)
+            }
+            execute (query, params, trace) {
+                return astq.execute(this, query, params, trace)
+            }
             query (selector, params, trace) {
                 return astq.query(this, selector, params, trace)
             }
