@@ -13,16 +13,8 @@ Abstract Syntax Tree With Integrated Query Engine
 Installation
 ------------
 
-#### Node environments (with NPM package manager):
-
 ```shell
 $ npm install asty-astq
-```
-
-#### Browser environments (with Bower package manager):
-
-```shell
-$ bower install asty-astq
 ```
 
 About
