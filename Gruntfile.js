@@ -24,17 +24,16 @@
 
 /* global module: true */
 module.exports = function (grunt) {
-    grunt.loadNpmTasks("grunt-contrib-jshint");
     grunt.loadNpmTasks("grunt-contrib-clean");
     grunt.loadNpmTasks("grunt-browserify");
     grunt.loadNpmTasks("grunt-mocha-test");
+    grunt.loadNpmTasks("grunt-eslint");
 
     grunt.initConfig({
-        jshint: {
+        eslint: {
             options: {
-                jshintrc: "jshint.json"
+                configFile: "eslint.yaml"
             },
-            "gruntfile":  [ "Gruntfile.js" ],
             "asty-astq": [ "src/**/*.js", "tst/**/*.js" ]
         },
         browserify: {
@@ -43,9 +42,19 @@ module.exports = function (grunt) {
                     "lib/asty-astq.browser.js": [ "src/**/*.js" ]
                 },
                 options: {
-                    transform: [ [ "babelify", { presets: [ "es2015" ] } ] ],
+                    transform: [
+                        [ "babelify", {
+                            presets: [
+                                [ "env", {
+                                    "targets": {
+                                        "browser": [ "last 8 versions", "> 1%", "ie 9" ]
+                                    }
+                                } ]
+                            ]
+                        } ],
+                        [ "uglifyify", { sourceMap: false, global: true } ]
+                    ],
                     plugin: [
-                        [ "minifyify", { map: "asty-astq.browser.map", output: "lib/asty-astq.browser.map" } ],
                         [ "browserify-derequire" ],
                         [ "browserify-header" ]
                     ],
@@ -53,7 +62,7 @@ module.exports = function (grunt) {
                     ],
                     browserifyOptions: {
                         standalone: "ASTYASTQ",
-                        debug: true
+                        debug: false
                     }
                 }
             },
@@ -62,7 +71,17 @@ module.exports = function (grunt) {
                     "lib/asty-astq.node.js": [ "src/**/*.js" ]
                 },
                 options: {
-                    transform: [ [ "babelify", { presets: [ "es2015" ] } ] ],
+                    transform: [
+                        [ "babelify", {
+                            presets: [
+                                [ "env", {
+                                    "targets": {
+                                        "node": [ "4.0.0" ]
+                                    }
+                                } ]
+                            ]
+                        } ]
+                    ],
                     plugin: [
                         [ "browserify-derequire" ],
                         [ "browserify-header" ]
@@ -92,7 +111,7 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.registerTask("default", [ "jshint", "browserify", "mochaTest" ]);
+    grunt.registerTask("default", [ "eslint", "browserify", "mochaTest" ]);
     grunt.registerTask("test", [ "mochaTest" ]);
 };
 
