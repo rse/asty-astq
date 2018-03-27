@@ -56,10 +56,10 @@ let ASTYASTQ = class ASTYASTQ extends ASTY {
         this.extend({
             compile (selector, trace) {
                 return astq.compile(selector, trace)
-            }
+            },
             execute (query, params, trace) {
                 return astq.execute(this, query, params, trace)
-            }
+            },
             query (selector, params, trace) {
                 return astq.query(this, selector, params, trace)
             }
