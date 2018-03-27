@@ -35,5 +35,12 @@
     "dependencies": {
         "asty":                 "1.6.3",
         "astq":                 "2.1.2"
+    },
+    "engines": {
+        "node":                   ">=4.0.0"
+    },
+    "scripts": {
+        "prepublishOnly":  "grunt default",
+        "build":           "grunt default"
     }
 }
