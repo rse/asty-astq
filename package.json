@@ -40,8 +40,8 @@
         "browserify-derequire":   "0.9.4"
     },
     "dependencies": {
-        "asty":                   "1.7.9",
-        "astq":                   "2.2.7"
+        "asty":                   "1.7.10",
+        "astq":                   "2.2.8"
     },
     "engines": {
         "node":                   ">=4.0.0"
