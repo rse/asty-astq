@@ -34,14 +34,14 @@
         "mocha":                  "5.1.1",
         "chai":                   "4.1.2",
         "babelify":               "8.0.0",
-        "babel-preset-env":       "1.6.1",
+        "babel-preset-env":       "1.7.0",
         "uglifyify":              "5.0.0",
-        "browserify-header":      "0.9.2",
-        "browserify-derequire":   "0.9.4"
+        "browserify-header":      "0.9.4",
+        "browserify-derequire":   "0.9.6"
     },
     "dependencies": {
-        "asty":                   "1.7.10",
-        "astq":                   "2.2.8"
+        "asty":                   "1.7.11",
+        "astq":                   "2.2.9"
     },
     "engines": {
         "node":                   ">=4.0.0"
