@@ -41,7 +41,7 @@
     },
     "dependencies": {
         "asty":                   "1.8.0",
-        "astq":                   "2.5.0"
+        "astq":                   "2.6.0"
     },
     "engines": {
         "node":                   ">=8.0.0"
