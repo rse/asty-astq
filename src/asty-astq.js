@@ -23,11 +23,11 @@
 */
 
 /*  require both ASTy and ASTq  */
-let ASTY = require("asty")
-let ASTQ = require("astq")
+const ASTY = require("asty")
+const ASTQ = require("astq")
 
 /*  define an ASTq adapter for ASTy  */
-let ASTQAdapter = class ASTQAdapter {
+const ASTQAdapter = class ASTQAdapter {
     taste            (/* node */) { return true           }
     getParentNode    (node)       { return node.parent()  }
     getChildNodes    (node)       { return node.childs()  }
@@ -37,7 +37,7 @@ let ASTQAdapter = class ASTQAdapter {
 }
 
 /*  define an ASTy super class hooking up ASTq to ASTy  */
-let ASTYASTQ = class ASTYASTQ extends ASTY {
+const ASTYASTQ = class ASTYASTQ extends ASTY {
     constructor () {
         /*  give ASTy super class a chance to initialize  */
         super()
@@ -47,7 +47,7 @@ let ASTYASTQ = class ASTYASTQ extends ASTY {
             return new ASTYASTQ()
 
         /*  create an ASTq instance, able to operate on ASTy  */
-        let astq = new ASTQ()
+        const astq = new ASTQ()
         astq.adapter(new ASTQAdapter())
 
         /*  extend this ASTy instance with ASTq methods  */
