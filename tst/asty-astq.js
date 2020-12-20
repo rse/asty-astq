@@ -25,15 +25,15 @@
 /* global describe: false */
 /* global it: false */
 
-var chai = require("chai")
-var expect = chai.expect
+const chai = require("chai")
+const expect = chai.expect
 chai.config.includeStack = true
 
 describe("ASTy-ASTq Library", function () {
     it("basic functionality", function () {
-        var ASTYASTQ = require("../lib/asty-astq.node.js")
-        var asty = new ASTYASTQ()
-        var node = asty.create("foo")
+        const ASTYASTQ = require("../lib/asty-astq.node.js")
+        const asty = new ASTYASTQ()
+        const node = asty.create("foo")
         expect(node).to.be.a("object")
         expect(node).to.include.keys("T", "A", "C", "P")
         expect(node.T).to.be.equal("foo")
