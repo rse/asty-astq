@@ -83,7 +83,6 @@ module.exports = function (grunt) {
                         } ]
                     ],
                     plugin: [
-                        [ "browserify-derequire" ],
                         [ "browserify-header" ]
                     ],
                     external: [
