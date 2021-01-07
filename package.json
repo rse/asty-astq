@@ -1,21 +1,21 @@
 {
-    "name":        "asty-astq",
-    "version":     "1.13.3",
-    "description": "Abstract Syntax Tree With Integrated Query Engine",
-    "keywords":    [ "ast", "abstract", "syntax", "tree", "query", "engine", "integration", "asty", "astq" ],
-    "license":     "MIT",
-    "main":        "lib/asty-astq.node.js",
+    "name":                       "asty-astq",
+    "version":                    "1.13.3",
+    "description":                "Abstract Syntax Tree With Integrated Query Engine",
+    "keywords":                   [ "ast", "abstract", "syntax", "tree", "query", "engine", "integration", "asty", "astq" ],
+    "license":                    "MIT",
+    "main":                       "lib/asty-astq.node.js",
     "repository": {
-        "type": "git",
-        "url":  "https://github.com/rse/asty-astq.git"
+        "type":                   "git",
+        "url":                    "https://github.com/rse/asty-astq.git"
     },
     "author": {
-        "name":  "Dr. Ralf S. Engelschall",
-        "email": "rse@engelschall.com",
-        "url":   "http://engelschall.com"
+        "name":                   "Dr. Ralf S. Engelschall",
+        "email":                  "rse@engelschall.com",
+        "url":                    "http://engelschall.com"
     },
-    "homepage": "https://github.com/rse/asty-astq",
-    "bugs":     "https://github.com/rse/asty-astq/issues",
+    "homepage":                   "https://github.com/rse/asty-astq",
+    "bugs":                       "https://github.com/rse/asty-astq/issues",
     "devDependencies": {
         "grunt":                  "1.3.0",
         "grunt-cli":              "1.3.2",
@@ -39,14 +39,14 @@
         "browserify-derequire":   "1.0.1"
     },
     "dependencies": {
-        "asty":                   "1.8.13",
-        "astq":                   "2.7.4"
+        "asty":                   "1.8.14",
+        "astq":                   "2.7.5"
     },
     "engines": {
         "node":                   ">=8.0.0"
     },
     "scripts": {
-        "prepublishOnly":  "grunt default",
-        "build":           "grunt default"
+        "prepublishOnly":         "grunt default",
+        "build":                  "grunt default"
     }
 }
