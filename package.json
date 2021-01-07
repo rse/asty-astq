@@ -25,7 +25,7 @@
         "grunt-eslint":           "23.0.0",
         "babel-eslint":           "10.1.0",
         "@babel/core":            "7.12.10",
-        "eslint":                 "7.16.0",
+        "eslint":                 "7.17.0",
         "eslint-config-standard": "16.0.2",
         "eslint-plugin-promise":  "4.2.1",
         "eslint-plugin-import":   "2.22.1",
@@ -39,8 +39,8 @@
         "browserify-derequire":   "1.0.1"
     },
     "dependencies": {
-        "asty":                   "1.8.11",
-        "astq":                   "2.7.2"
+        "asty":                   "1.8.13",
+        "astq":                   "2.7.4"
     },
     "engines": {
         "node":                   ">=8.0.0"
