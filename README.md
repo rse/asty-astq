@@ -76,7 +76,7 @@ which ASTy-ASTq maps itself:
 License
 -------
 
-Copyright (c) 2014-2021 Dr. Ralf S. Engelschall (http://engelschall.com/)
+Copyright (c) 2014-2022 Dr. Ralf S. Engelschall (http://engelschall.com/)
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
