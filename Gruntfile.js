@@ -32,7 +32,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
         eslint: {
             options: {
-                configFile: "eslint.yaml"
+                overrideConfigFile: "eslint.yaml"
             },
             "asty-astq": [ "src/**/*.js", "tst/**/*.js" ]
         },
