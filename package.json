@@ -7,7 +7,7 @@
     "main":                       "lib/asty-astq.node.js",
     "repository": {
         "type":                   "git",
-        "url":                    "https://github.com/rse/asty-astq.git"
+        "url":                    "git+https://github.com/rse/asty-astq.git"
     },
     "author": {
         "name":                   "Dr. Ralf S. Engelschall",
